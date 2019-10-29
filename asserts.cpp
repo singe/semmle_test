@@ -7,6 +7,7 @@ int main()
 {
   char foo[10];
   char bar[10];
+  int len;
 
   cout << "foo? ";
   cin >> foo;

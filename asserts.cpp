@@ -11,10 +11,12 @@ int main()
   cout << "foo? ";
   cin >> foo;
 
-  assert(strlen(foo) < 10);
+  len = strlen(foo);
+
+  assert(len < 10);
   cout << "yay\n";
 
-  memcpy(bar, foo, strlen(foo));
+  memcpy(bar, foo, len);
   cout << bar;
 	return 0;
 }
